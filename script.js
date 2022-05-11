@@ -6,17 +6,9 @@ const pink = document.querySelector(".pink")
 
 const center = document.querySelector(".center");
 
-// console.log(window.getComputedStyle(red).backgroundColor);
-
 const getBGColor = (selectedElement) => {
     return window.getComputedStyle(selectedElement).backgroundColor;
 };
-
-// var color = getBGColor(pink);
-
-// pink.addEventListener("mouseenter", () => {
-//     center.style.background = color;
-// });
 
 const magicColorChanger = (element, color) => {
     return element.addEventListener("mouseenter", () => {
@@ -25,3 +17,7 @@ const magicColorChanger = (element, color) => {
 }
 
 magicColorChanger(red, getBGColor(red));
+magicColorChanger(cyan, getBGColor(cyan));
+magicColorChanger(violet, getBGColor(violet));
+magicColorChanger(orange, getBGColor(orange));
+magicColorChanger(pink, getBGColor(pink));
