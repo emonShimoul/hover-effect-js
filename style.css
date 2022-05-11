@@ -43,3 +43,19 @@ body {
     justify-content: center;
     flex-direction: row;
   }
+  .text {
+    padding: 10px;
+    color: #ffffff;
+  }
+  .color {
+    width: 120px;
+    height: 30px;
+    border-radius: 5%;
+    margin-bottom: 30px;
+  }
+  .color:hover {
+    cursor: pointer;
+  }
+  .color:last-child {
+    margin-bottom: 0;
+  }
